@@ -1,10 +1,18 @@
 .header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 0;
+    position: absolute;
+}
+
+.container{
     max-width: 1283px;
     width: 90%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 29px auto;
+    align-items: center;
 }
 
 .headerLogo{
@@ -14,6 +22,10 @@
     height: 43px;
 }
 
+.headerLanguages{
+    display: flex;
+}
+
 .headerLanguagesBtn{
     width: 60px;
     height: 30px;
@@ -21,6 +33,10 @@
     font-size: 0.875rem;
     cursor: pointer;
     background-color: transparent;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .headerLanguagesBtn:first-of-type{

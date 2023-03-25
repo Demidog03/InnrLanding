@@ -4,15 +4,17 @@ import classes from './header.module.css'
 const Header = () => {
     return (
         <div className={classes.header}>
+            <div className={classes.container}>
             <div className={classes.headerLogo}>
             </div>
             <div className={classes.headerLanguages}>
-                <button className={classes.headerLanguagesBtn}>
+                <div className={classes.headerLanguagesBtn}>
                     ENG
-                </button>
-                <button className={classes.headerLanguagesBtn}>
+                </div>
+                <div className={classes.headerLanguagesBtn}>
                     RU
-                </button>
+                </div>
+            </div>
             </div>
         </div>
 

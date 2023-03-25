@@ -19,7 +19,7 @@
     max-width: 1440px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     text-align: left;
     padding-right: 31px ;
     position: relative;
@@ -33,8 +33,8 @@
 
 .mainImg{
     max-width: 730px;
-    width: 30%;
-
+    height: 100vh;
+    margin-top: -50px;
     object-fit: cover;
 }
 
@@ -43,10 +43,10 @@
 .contactForm{
     display: flex;
     justify-content: space-between;
-    max-width: 663px;
+    max-width: 600px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.67);
-    padding: 20px 26px;
+    padding: 14px 20px;
     border: 11px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 33px;
 }
@@ -54,7 +54,7 @@
 .countriesSelect{
     width: 33%;
     padding: 14px 8px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 10px;
     border: none;
     color: #808080;
@@ -64,7 +64,7 @@
 
 .emailInput{
     padding: 14px 13px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 62%;
     border-radius: 10px;
     background: rgba(217, 217, 217, 0.35);
@@ -73,7 +73,7 @@
 }
 
 .submitBtn{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 12px 41px;
     border-radius: 10px;
     background: #C1F25B;
@@ -90,13 +90,13 @@
     font-weight: 600;
     font-size: 4.375rem;
     line-height: 5.469rem;
-    margin-bottom: 37px;
+    margin-bottom: 25px;
 }
 
 .welcomeSubtitle{
     font-size: 1.5rem;
     line-height: 2rem;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 
