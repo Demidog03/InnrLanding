@@ -5,7 +5,14 @@ import mainImg from '../../assets/main-img.svg'
 import Countries from "../../data/Countries";
 import Header from "../Header/Header";
 
+import Typewriter from 'typewriter-effect';
+
 const Welcome = () => {
+    const typingWordsStyle = {
+        fontWeight: '600',
+        fontSize: '1.5rem',
+    }
+
     return (
         <div className={classes.welcome}>
             <Header/>
@@ -15,7 +22,18 @@ const Welcome = () => {
                 <div className={classes.welcomeText}>
                     <h1 className={classes.welcomeTitle}>Say goodbye to <br/>
                         skincare guesswork</h1>
-                    <h2 className={classes.welcomeSubtitle}>Get personalized skin care advice</h2>
+                    <div className={classes.welcomeSubtitle}>
+                        <h2>The solution that provides </h2>
+                        <Typewriter style={typingWordsStyle}
+                                    options={{
+                                        wrapperClassName: classes.typingWords,
+                                        strings: ['expert guidance', 'lightning-last results', 'affordable solutions'],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                        />
+                    </div>
+
                     <form className={classes.contactForm}>
                         <select className={classes.countriesSelect} name="country" id="" defaultValue={'Country'}>
                             <option value="Country" disabled={true} >Country</option>

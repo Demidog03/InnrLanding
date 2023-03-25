@@ -94,9 +94,23 @@
 }
 
 .welcomeSubtitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.welcomeSubtitle h2{
     font-size: 1.5rem;
     line-height: 2rem;
-    margin-bottom: 60px;
 }
+
+.typingWords{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
 
 
