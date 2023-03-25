@@ -1,0 +1,28 @@
+.header{
+    max-width: 1283px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 29px auto;
+}
+
+.headerLogo{
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    width: 43px;
+    height: 43px;
+}
+
+.headerLanguagesBtn{
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.headerLanguagesBtn:first-of-type{
+    margin-right: 12px;
+}

@@ -1,0 +1,102 @@
+.welcome{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.welcomeBg{
+    position: absolute;
+    z-index: -1;
+    height: 1001px;
+    width: 900px;
+    top: 0;
+    right: 0;
+}
+
+.welcomeContent{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    padding-right: 31px ;
+    position: relative;
+    align-items: center;
+}
+
+.welcomeText{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainImg{
+    max-width: 730px;
+    width: 30%;
+
+    object-fit: cover;
+}
+
+
+/*Form*/
+.contactForm{
+    display: flex;
+    justify-content: space-between;
+    max-width: 663px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.67);
+    padding: 20px 26px;
+    border: 11px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 33px;
+}
+
+.countriesSelect{
+    width: 33%;
+    padding: 14px 8px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    color: #808080;
+    background: rgba(179, 219, 242, 0.34);
+    cursor: pointer;
+}
+
+.emailInput{
+    padding: 14px 13px;
+    font-size: 1.5rem;
+    width: 62%;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.35);
+    border: none;
+
+}
+
+.submitBtn{
+    font-size: 2rem;
+    padding: 12px 41px;
+    border-radius: 10px;
+    background: #C1F25B;
+    font-weight: 500;
+    border: 2px solid #000000;
+    box-shadow: -6px 4px #C1F25B;
+    align-self: center;
+}
+
+
+/*Text*/
+.welcomeTitle{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 4.375rem;
+    line-height: 5.469rem;
+    margin-bottom: 37px;
+}
+
+.welcomeSubtitle{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 80px;
+}
+
+
