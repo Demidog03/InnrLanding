@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState} from 'react';
 import classes from './welcome.module.css'
 import welcomeBg from '../../assets/bg.svg'
 import mainImg from '../../assets/main-img.png'
@@ -8,9 +8,35 @@ import Header from "../Header/Header";
 import Typewriter from 'typewriter-effect';
 
 const Welcome = () => {
+    const [email, setEmail] = useState('')
+    const [country, setCountry] = useState('')
     const typingWordsStyle = {
         fontWeight: '600',
         fontSize: '1.5rem',
+    }
+
+    const handleSend = () => {
+        if(email==='' && country===''){
+            alert('Please, select your country and enter your email')
+            return;
+        }
+        else if(email===''){
+            alert('Please, enter an email')
+            return;
+        }
+        else if(country==='' || country==='Country'){
+            alert('Please, select your country')
+            return;
+        }
+        window.Email.send({
+            SecureToken: 'ee3f42be-296a-43a0-8615-88bc7ab08344',
+            To : 'o.otep@mail.ru',
+            From : email,
+            Subject : "Innr",
+            Body : `Country: ${country}, email: ${email}`
+        }).then(
+            alert('Thank you for support!')
+        );
     }
 
     return (
@@ -34,13 +60,14 @@ const Welcome = () => {
                     </div>
 
                     <form className={classes.contactForm}>
-                        <select className={classes.countriesSelect} name="country" id="" defaultValue={'Country'}>
-                            <option value="Country" disabled={true} >Country</option>
+                        <select value={country} onChange={(e) => setCountry(e.target.value)}
+                                className={classes.countriesSelect} name="country" id="country-select" defaultValue={'Country'}>
+                            <option value="Country" selected={true}>Country</option>
                             <Countries/>
                         </select>
-                        <input className={classes.emailInput} placeholder='E-mail' type="email"/>
+                        <input value={email} onChange={(e) => {setEmail(e.target.value)}} className={classes.emailInput} placeholder='E-mail' type="email"/>
                     </form>
-                    <button className={classes.submitBtn}>I am with you!</button>
+                    <button onClick={handleSend} className={classes.submitBtn}>I am with you!</button>
                 </div>
             </div>
 

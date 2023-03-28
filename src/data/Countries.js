@@ -17,10 +17,8 @@ const Countries = () => {
     return (
         <>
             {countries.map((country) => {
-                const {id} = country
-
                 return (
-                    <option value={id}>{country.name.common}</option>
+                    <option value={country.name.common}>{country.name.common}</option>
                 )
             })}
         </>
