@@ -29,13 +29,15 @@ const Welcome = () => {
             return;
         }
         window.Email.send({
-            SecureToken: 'ee3f42be-296a-43a0-8615-88bc7ab08344',
-            To : 'o.otep@mail.ru',
-            From : email,
+            SecureToken: '0d90727e-5880-49e0-9e0b-c215e9b2e7ab',
+            To : email,
+            From : 'olzhasaitu362@gmail.com',
             Subject : "Innr",
-            Body : `Country: ${country}, email: ${email}`
-        }).then(
-            alert('Thank you for support!')
+            Body : `Thank you for support! **Telegram link**`
+        }).then(message => {
+                console.log(message)
+                alert('Thank you for support!')
+        }
         );
     }
 
