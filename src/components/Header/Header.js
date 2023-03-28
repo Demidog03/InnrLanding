@@ -5,16 +5,22 @@ const Header = () => {
     return (
         <div className={classes.header}>
             <div className={classes.container}>
-            <div className={classes.headerLogo}>
-            </div>
-            <div className={classes.headerLanguages}>
-                <div className={classes.headerLanguagesBtn}>
-                    ENG
+            <h1>Innr</h1>
+                <div className={classes.nav}>
+                    <ul className={classes.menu}>
+                        <a href="">Home</a>
+                        <a href="">Partnership</a>
+                    </ul>
+                    <div className={classes.headerLanguages}>
+                        <div className={classes.headerLanguagesBtn}>
+                            ENG
+                        </div>
+                        <div className={classes.headerLanguagesBtn}>
+                            RU
+                        </div>
+                    </div>
                 </div>
-                <div className={classes.headerLanguagesBtn}>
-                    RU
-                </div>
-            </div>
+
             </div>
         </div>
 

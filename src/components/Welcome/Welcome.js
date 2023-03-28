@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './welcome.module.css'
 import welcomeBg from '../../assets/bg.svg'
-import mainImg from '../../assets/main-img.svg'
+import mainImg from '../../assets/main-img.png'
 import Countries from "../../data/Countries";
 import Header from "../Header/Header";
 
@@ -20,10 +20,9 @@ const Welcome = () => {
             <div className={classes.welcomeContent}>
                 <img className={classes.mainImg} src={mainImg} alt=""/>
                 <div className={classes.welcomeText}>
-                    <h1 className={classes.welcomeTitle}>Say goodbye to <br/>
-                        skincare guesswork</h1>
+                    <h1 className={classes.welcomeTitle}>Scan for instant facial skin diagnosis</h1>
                     <div className={classes.welcomeSubtitle}>
-                        <h2>The solution that provides </h2>
+                        <h2>Solutions for every skin concern offered </h2>
                         <Typewriter style={typingWordsStyle}
                                     options={{
                                         wrapperClassName: classes.typingWords,

@@ -33,7 +33,7 @@
 
 .mainImg{
     max-width: 730px;
-    height: 100vh;
+    width: 50%;
     margin-top: -50px;
     object-fit: cover;
 }

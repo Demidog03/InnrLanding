@@ -1,0 +1,66 @@
+.contact{
+    max-width: 1191px;
+    margin: 0 auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contactField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactDesc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactTitle{
+    font-size: 2.5rem;
+}
+
+.contactForm{
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.67);
+    padding: 14px 20px;
+    border: 11px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 33px;
+}
+
+.countriesSelect{
+    width: 36%;
+    padding: 23px 22px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    color: #808080;
+    background: rgba(179, 219, 242, 0.34);
+    cursor: pointer;
+}
+
+.emailInput{
+    padding: 22px 26px;
+    font-size: 1.2rem;
+    width: 62%;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.35);
+    border: none;
+
+}
+
+.submitBtn{
+    font-size: 1.5rem;
+    padding: 12px 41px;
+    border-radius: 10px;
+    background: #C1F25B;
+    font-weight: 500;
+    border: 2px solid #000000;
+    box-shadow: -6px 4px #C1F25B;
+    align-self: center;
+}

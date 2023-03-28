@@ -5,6 +5,7 @@
     justify-content: center;
     padding: 29px 0;
     position: absolute;
+    z-index: 1;
 }
 
 .container{
@@ -41,4 +42,24 @@
 
 .headerLanguagesBtn:first-of-type{
     margin-right: 12px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    font-family: Lexend, sans-serif;
+    font-weight: 300;
+    margin-right: 39px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:first-of-type{
+    margin-right: 43px;
 }
