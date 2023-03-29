@@ -34,3 +34,78 @@
     font-size: 3rem;
     margin-bottom: 90px;
 }
+
+.partnerFacts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.partnerFactsContainer{
+    max-width: 1182px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.partnerFactsTitle{
+    font-size: 3rem;
+    margin-bottom: 124px;
+    text-align: center;
+}
+
+.partnerFact{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+}
+
+.partnerFact:nth-of-type(even){
+    justify-content: flex-end;
+}
+
+.question{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.questionContainer{
+    max-width: 1182px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.questionTitle{
+    position: relative;
+    font-size: 3rem;
+    width: 600px;
+    margin-bottom: 40px;
+}
+
+.questionTitle img{
+    width: 350px;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+}
+
+.email{
+    width: 333px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.email img{
+    width: 16px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}

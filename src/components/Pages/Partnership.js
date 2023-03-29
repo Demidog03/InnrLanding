@@ -4,6 +4,7 @@ import CustomCursor from "custom-cursor-react";
 import joinTelegramClasses from "../JoinTelegram/joinTelegram.module.css";
 import PartnerWelcome from "../PartnerWelcome/PartnerWelcome";
 import PartnerForm from "../PartnerForm/PartnerForm";
+import Footer from "../Footer/Footer";
 
 const Partnership = () => {
     const cursor = useRef()
@@ -17,6 +18,7 @@ const Partnership = () => {
             <Header/>
             <PartnerWelcome/>
             <PartnerForm/>
+            <Footer/>
             <div ref = {cursor} style={styles}>
                 <CustomCursor
 

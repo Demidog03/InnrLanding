@@ -19,14 +19,13 @@ const Home = () => {
     return (
         <div className="App">
             <Header/>
-            <Welcome/>
+            <Welcome cursor={cursor}/>
             <Description/>
             <Contact/>
             <JoinTelegram cursor={cursor}/>
             <Footer/>
             <div ref = {cursor} style={styles}>
                 <CustomCursor
-
                     style={styles}
                     targets={['a', '.link', 'img', 'button', 'input', 'select']}
                     customClass={joinTelegramClasses.cursorCustom}

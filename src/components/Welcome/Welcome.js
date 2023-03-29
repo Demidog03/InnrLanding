@@ -2,14 +2,14 @@ import {useState} from 'react';
 import classes from './welcome.module.css'
 import welcomeBg from '../../assets/bg.svg'
 import mainImg from '../../assets/main-img.png'
-import instantBorder from  '../../assets/instant-border.svg'
+import instantBorder from  '../../assets/instant-border.png'
 import rocketIcon from '../../assets/emojis/rocket.png'
 import arrow from '../../assets/arrow.svg'
 import Countries from "../../data/Countries";
 
 import Typewriter from 'typewriter-effect';
 
-const Welcome = () => {
+const Welcome = ({cursor}) => {
     const [email, setEmail] = useState('')
     const [country, setCountry] = useState('')
     const typingWordsStyle = {
@@ -47,7 +47,13 @@ const Welcome = () => {
         <div className={classes.welcome}>
             <img className={classes.welcomeBg} src={welcomeBg} alt=""/>
             <div className={classes.welcomeContent}>
-                <img className={classes.mainImg} src={mainImg} alt=""/>
+                <img onMouseEnter={() => {
+                    cursor.current.style.mixBlendMode = "normal"
+                }} onMouseLeave={() => {
+                    cursor.current.style.mixBlendMode = "difference"
+                }}
+
+                     className={classes.mainImg} src={mainImg} alt=""/>
                 <div className={classes.welcomeText}>
                     <h1 className={classes.welcomeTitle}>Scan for
                         <span className={classes.instantWord}> instant <img src={instantBorder} alt="instantBorder"/></span>

@@ -3,7 +3,7 @@ import classes from "./contact.module.css";
 import Countries from "../../data/Countries";
 import oval1 from '../../assets/Oval1.png'
 import rocket from '../../assets/emojis/rocket.png'
-import launchBorder from  '../../assets/instant-border.svg'
+import launchBorder from  '../../assets/instant-border.png'
 import shineIcon1 from '../../assets/icons/shine-icon1.svg'
 import shineIcon2 from '../../assets/icons/shine-icon2.svg'
 import shineIcon3 from '../../assets/icons/shine-icon3.svg'

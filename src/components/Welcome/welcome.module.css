@@ -44,6 +44,10 @@
     object-fit: cover;
 }
 
+.mainImg:hover .custom-cursor{
+    mix-blend-mode: normal;
+}
+
 
 /*Form*/
 .contactForm{
