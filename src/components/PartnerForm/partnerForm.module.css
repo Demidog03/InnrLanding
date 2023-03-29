@@ -1,0 +1,36 @@
+.partnerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.formContainer{
+    display: flex;
+    max-width: 1160px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.formButtons{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.formButton{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 30px 50px;
+    max-width: 558px;
+    width: 48%;
+    background: #C8FA60;
+    border-radius: 10px;
+}
+
+.formTitle{
+    font-size: 3rem;
+    margin-bottom: 90px;
+}
