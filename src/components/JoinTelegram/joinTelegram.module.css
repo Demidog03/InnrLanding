@@ -60,3 +60,11 @@
     margin-bottom: 104px;
 }
 
+.cursorCustom{
+    z-index: 1000;
+}
+
+.questionMark:hover{
+    width: 205px;
+    height: 205px;
+}

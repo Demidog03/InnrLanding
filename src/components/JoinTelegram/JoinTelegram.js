@@ -1,13 +1,13 @@
-import {useState} from 'react';
+import {memo, useState} from 'react';
 import classes from "./joinTelegram.module.css";
 import questionMark from '../../assets/question-mark.png'
 import oval1 from '../../assets/Oval1.png'
 import dividerLine from '../../assets/divider-line.png'
+import qrTg from '../../assets/qr-tg.png'
 import CustomCursor from "custom-cursor-react";
 
-const JoinTelegram = () => {
-    const [hover, isHover] = useState(false);
-        console.log(hover)
+const JoinTelegram = ({cursor}) => {
+    console.log(cursor)
     return (
         <div className={classes.joinTelegram}>
             <div className={classes.joinTelegramContainer}>
@@ -21,8 +21,24 @@ const JoinTelegram = () => {
                         <h2>Join Telegram</h2>
                         <img src={dividerLine} alt=""/>
                         <h3>Get updated news</h3>
+
                     </div>
-                    <img onMouseEnter={()=> isHover(true)} onMouseLeave={()=> isHover(false)} className={classes.questionMark} src={questionMark} alt=""/>
+
+                    <img onMouseOver={(event) => {
+                        event.target.src=qrTg
+                        console.log(cursor.current.children[0])
+                        cursor.current.children[0].children[0].width.baseVal.value = 100;
+                        cursor.current.children[0].children[0].height.baseVal.value = 100;
+                        cursor.current.children[0].children[0].children[0].r.baseVal.value = 100
+
+                    }}
+                         onMouseLeave={(event) => {
+                             event.target.src=questionMark
+                             cursor.current.children[0].children[0].width.baseVal.value = 90;
+                             cursor.current.children[0].children[0].height.baseVal.value = 90;
+                             cursor.current.children[0].children[0].children[0].r.baseVal.value = 22.5
+                         }}
+                         className={classes.questionMark} src={questionMark} alt=""/>
                     </div>
                 </div>
             </div>
@@ -30,4 +46,4 @@ const JoinTelegram = () => {
     );
 };
 
-export default JoinTelegram;
+export default memo(JoinTelegram);

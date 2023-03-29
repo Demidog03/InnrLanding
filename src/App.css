@@ -1,7 +1,4 @@
 .custom-cursor{
     z-index: 1000;
-}
 
-.questionMark:hover ~ .custom-cursor{
-    transform: scale(0.2);
 }
