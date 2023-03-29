@@ -4,8 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 29px 0;
-    position: absolute;
-    z-index: 1;
+    z-index: -1;
 }
 
 .container{
@@ -17,10 +16,11 @@
 }
 
 .headerLogo{
-    border-radius: 50%;
-    background-color: #D9D9D9;
-    width: 43px;
-    height: 43px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #000000;
+    z-index: 0;
 }
 
 .headerLanguages{

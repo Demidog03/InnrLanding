@@ -1,5 +1,5 @@
 .description{
-    max-width: 1191px;
+    max-width: 1119px;
     margin: 0 auto;
     margin-top: 212px;
 }
@@ -38,7 +38,7 @@
 
 .phoneImg{
     width: 32%;
-    max-width: 389px;
+    min-width: 389px;
 }
 
 

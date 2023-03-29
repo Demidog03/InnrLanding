@@ -2,8 +2,10 @@ import {useState} from 'react';
 import classes from './welcome.module.css'
 import welcomeBg from '../../assets/bg.svg'
 import mainImg from '../../assets/main-img.png'
+import instantBorder from  '../../assets/instant-border.svg'
+import rocketIcon from '../../assets/emojis/rocket.png'
+import arrow from '../../assets/arrow.svg'
 import Countries from "../../data/Countries";
-import Header from "../Header/Header";
 
 import Typewriter from 'typewriter-effect';
 
@@ -43,20 +45,28 @@ const Welcome = () => {
 
     return (
         <div className={classes.welcome}>
-            <Header/>
             <img className={classes.welcomeBg} src={welcomeBg} alt=""/>
             <div className={classes.welcomeContent}>
                 <img className={classes.mainImg} src={mainImg} alt=""/>
                 <div className={classes.welcomeText}>
-                    <h1 className={classes.welcomeTitle}>Scan for instant facial skin diagnosis</h1>
+                    <h1 className={classes.welcomeTitle}>Scan for
+                        <span className={classes.instantWord}> instant <img src={instantBorder} alt="instantBorder"/></span>
+                        facial skin diagnosis</h1>
                     <div className={classes.welcomeSubtitle}>
                         <h2>Solutions for every skin concern offered </h2>
                         <Typewriter style={typingWordsStyle}
                                     options={{
                                         wrapperClassName: classes.typingWords,
-                                        strings: ['expert guidance', 'lightning-last results', 'affordable solutions'],
+                                        strings: [
+                                            '<span style="display:inline-block;">&#x1F525</span>',
+                                            '<span style="display:inline-block;">&#x1F680</span>',
+                                            '<span style="display:inline-block;">&#x1F929</span>',
+                                            '<span style="display:inline-block;">&#x1F49B</span>',
+                                            '<span style="display:inline-block;">&#x1F4AF</span>',
+                                        ],
                                         autoStart: true,
                                         loop: true,
+                                        pauseFor: 2000,
                                     }}
                         />
                     </div>
@@ -69,7 +79,12 @@ const Welcome = () => {
                         </select>
                         <input value={email} onChange={(e) => {setEmail(e.target.value)}} className={classes.emailInput} placeholder='E-mail' type="email"/>
                     </form>
-                    <button onClick={handleSend} className={classes.submitBtn}>I am with you!</button>
+                    <div className={classes.clickMe}>
+                        <p className={classes.clickMeText}>Click to be <br/>
+                            the first</p>
+                        <img className={classes.arrowIcon} src={arrow} alt=""/>
+                        <div onClick={handleSend} className={classes.submitBtn}>I am with you! <img src={rocketIcon} alt=""/></div>
+                    </div>
                 </div>
             </div>
 

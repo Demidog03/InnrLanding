@@ -1,0 +1,62 @@
+.joinTelegram{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.joinTelegramContainer{
+    max-width: 1440px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.joinTelegramContent{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.questionMark{
+    width: 130px;
+    height: 205px;
+}
+
+.joinTelegramWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.joinTelegramImages{
+    display: flex;
+    width: 45%;
+    position: relative;
+}
+.joinTelegramImage2{
+    position: absolute;
+    left: 150px;
+    bottom: 0;
+}
+
+.joinTelegramText img{
+    max-width: 300px;
+}
+
+.joinTelegramText h2{
+    font-size: 3rem;
+}
+
+.joinTelegramText h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+.joinTelegramText{
+    margin-bottom: 104px;
+}
+

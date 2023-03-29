@@ -1,17 +1,21 @@
 .welcome{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-
+    height: calc(100vh - 100px);
+    position: relative;
+    justify-content: start;
 }
 
 .welcomeBg{
     position: absolute;
     z-index: -1;
-    height: 1001px;
-    width: 900px;
-    top: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    width: 310px;
+    height: 284px;
+    filter: blur(300px);
+    background: #C1F25B;
+    transform: translate(-50%, -50%);
 }
 
 .welcomeContent{
@@ -24,11 +28,13 @@
     padding-right: 31px ;
     position: relative;
     align-items: center;
+    height: 100%;
 }
 
 .welcomeText{
     display: flex;
     flex-direction: column;
+    width: 45%;
 }
 
 .mainImg{
@@ -46,8 +52,8 @@
     max-width: 600px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.67);
-    padding: 14px 20px;
-    border: 11px solid rgba(255, 255, 255, 0.3);
+    padding: 13px 16px;
+    border: 14px solid rgba(217, 217, 217, 0.12);
     margin-bottom: 33px;
 }
 
@@ -73,16 +79,42 @@
 }
 
 .submitBtn{
-    font-size: 1.5rem;
-    padding: 12px 41px;
+    font-size: 2rem;
+    padding: 15px 47px;
     border-radius: 10px;
-    background: #C1F25B;
+    background: #C8FA60;
     font-weight: 500;
-    border: 2px solid #000000;
-    box-shadow: -6px 4px #C1F25B;
     align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
+.submitBtn img{
+    width: 40px;
+}
+
+.clickMe{
+    max-width: 375px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.arrowIcon{
+    width: 25px;
+    position: absolute;
+    left: -50px;
+    top: 20px;
+}
+
+.clickMeText{
+    position: absolute;
+    left: -130px;
+    text-align: center;
+    transform: rotate(-2.22deg);
+}
 
 /*Text*/
 .welcomeTitle{
@@ -102,6 +134,17 @@
 .welcomeSubtitle h2{
     font-size: 1.5rem;
     line-height: 2rem;
+}
+.instantWord{
+    position: relative;
+}
+
+.instantWord img{
+    position: absolute;
+    top: -20%;
+    left: 0;
+    z-index: -1;
+    transform: scale(1.05);
 }
 
 .typingWords{
