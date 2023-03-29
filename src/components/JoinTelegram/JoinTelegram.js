@@ -7,7 +7,7 @@ import CustomCursor from "custom-cursor-react";
 
 const JoinTelegram = () => {
     const [hover, isHover] = useState(false);
-    console.log(hover)
+        console.log(hover)
     return (
         <div className={classes.joinTelegram}>
             <div className={classes.joinTelegramContainer}>
