@@ -5,6 +5,7 @@ import joinTelegramClasses from "../JoinTelegram/joinTelegram.module.css";
 import PartnerWelcome from "../PartnerWelcome/PartnerWelcome";
 import PartnerForm from "../PartnerForm/PartnerForm";
 import Footer from "../Footer/Footer";
+import partnerFormClasses from "../PartnerForm/partnerForm.module.css";
 
 const Partnership = () => {
     const cursor = useRef()
@@ -23,7 +24,7 @@ const Partnership = () => {
                 <CustomCursor
 
                     style={styles}
-                    targets={['a', '.link', 'img', 'button', 'input', 'select']}
+                    targets={['a', 'img', 'button', 'input', 'select', `.${partnerFormClasses.formButton}`]}
                     customClass={joinTelegramClasses.cursorCustom}
                     dimensions={90}
                     fill='#fff'
@@ -34,7 +35,7 @@ const Partnership = () => {
                     }}
                     opacity={1}
                     targetOpacity={1}
-                    targetScale={3}
+                    targetScale={2}
                 />
             </div>
         </div>

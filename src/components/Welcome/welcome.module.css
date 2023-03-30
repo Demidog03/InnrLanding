@@ -44,10 +44,6 @@
     object-fit: cover;
 }
 
-.mainImg:hover .custom-cursor{
-    mix-blend-mode: normal;
-}
-
 
 /*Form*/
 .contactForm{
@@ -63,13 +59,12 @@
 
 .countriesSelect{
     width: 33%;
-    padding: 14px 8px;
     font-size: 1.2rem;
     border-radius: 10px;
     border: none;
     color: #808080;
-    background: rgba(179, 219, 242, 0.34);
-    cursor: pointer;
+    background: rgba(179, 219, 242, 0.3);
+
 }
 
 .emailInput{

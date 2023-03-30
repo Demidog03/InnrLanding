@@ -11,18 +11,10 @@ const Countries = () => {
     }
 
     useEffect(() => {
-
         fetchCountriesData().then(r => console.log(r)).catch(error => console.error(error))
     }, [])
-    return (
-        <>
-            {countries.map((country) => {
-                return (
-                    <option value={country.name.common}>{country.name.common}</option>
-                )
-            })}
-        </>
-    );
+
+    return countries.map((country) => country.name.common)
 };
 
 export default Countries;

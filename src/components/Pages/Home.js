@@ -7,14 +7,21 @@ import JoinTelegram from "../JoinTelegram/JoinTelegram";
 import Footer from "../Footer/Footer";
 import CustomCursor from "custom-cursor-react";
 import joinTelegramClasses from "../JoinTelegram/joinTelegram.module.css";
+import welcomeClasses from '../Welcome/welcome.module.css'
+import contactClasses from '../Contact/contact.module.css'
 
 const Home = () => {
     const cursor = useRef()
 
     const styles = {
         mixBlendMode: 'difference',
-        zIndex: '1',
+        position: 'relative',
+        zIndex: '5000',
     }
+    console.log(welcomeClasses.submitBtn)
+    const targets = ['a', 'img', 'button', 'input', 'select', '.button',
+
+    ]
 
     return (
         <div className="App">
@@ -27,7 +34,7 @@ const Home = () => {
             <div ref = {cursor} style={styles}>
                 <CustomCursor
                     style={styles}
-                    targets={['a', '.link', 'img', 'button', 'input', 'select']}
+                    targets={targets}
                     customClass={joinTelegramClasses.cursorCustom}
                     dimensions={90}
                     fill='#fff'
@@ -38,7 +45,7 @@ const Home = () => {
                     }}
                     opacity={1}
                     targetOpacity={1}
-                    targetScale={3}
+                    targetScale={2}
                 />
             </div>
 

@@ -40,13 +40,12 @@
 
 .countriesSelect{
     width: 36%;
-    padding: 23px 22px;
+    padding: 0px 10px;
     font-size: 1.2rem;
     border-radius: 10px;
     border: none;
     color: #808080;
     background: rgba(179, 219, 242, 0.34);
-    cursor: pointer;
 }
 
 .emailInput{

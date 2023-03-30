@@ -61,7 +61,8 @@
 }
 
 .cursorCustom{
-    z-index: 1000;
+    position: relative;
+    z-index: 5000;
 }
 
 .questionMark:hover{

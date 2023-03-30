@@ -27,8 +27,8 @@ const JoinTelegram = ({cursor}) => {
                     <img onMouseOver={(event) => {
                         event.target.src=qrTg
                         console.log(cursor.current.children[0])
-                        cursor.current.children[0].children[0].width.baseVal.value = 100;
-                        cursor.current.children[0].children[0].height.baseVal.value = 100;
+                        cursor.current.children[0].children[0].width.baseVal.value = 160;
+                        cursor.current.children[0].children[0].height.baseVal.value = 160;
                         cursor.current.children[0].children[0].children[0].r.baseVal.value = 100
 
                     }}

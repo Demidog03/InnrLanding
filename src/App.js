@@ -1,7 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import 'custom-cursor-react/dist/index.css';
-
 import Home from "./components/Pages/Home";
 import Partnership from "./components/Pages/Partnership";
 
