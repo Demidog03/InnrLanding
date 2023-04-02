@@ -29,7 +29,7 @@ i18n
             }
           }
         },*/
-        fallbackLng: "ru",
+        fallbackLng: "en",
         debug: true,
         whitelist: languages,
 

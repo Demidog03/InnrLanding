@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from "./description.module.css";
 import smile from '../../assets/smile.svg'
-import phone from '../../assets/phone.svg'
+import phone from '../../assets/phone.png'
 
 import firstIcon from '../../assets/facts_places/first-icon.svg'
 import secondIcon from '../../assets/facts_places/second-icon.png'
