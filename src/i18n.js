@@ -3,7 +3,7 @@ import Backend from "i18next-xhr-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
-const languages = ['en', 'ru']
+const languages = [ 'ru', 'en']
 
 i18n
     // load translation using xhr -> see /public/locales
@@ -29,7 +29,8 @@ i18n
             }
           }
         },*/
-        fallbackLng: "en",
+        lng: 'ru',
+        fallbackLng: "ru",
         debug: true,
         whitelist: languages,
 

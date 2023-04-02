@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import { transitions, positions, Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
+import i18n from "./i18n";
 
 const options = {
     // you can also just use 'bottom center'
@@ -16,7 +17,7 @@ const options = {
     // you can also just use 'scale'
     transition: transitions.SCALE
 }
-
+i18n.changeLanguage('ru')
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
