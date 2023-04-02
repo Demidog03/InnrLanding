@@ -6,8 +6,15 @@ import PartnerWelcome from "../PartnerWelcome/PartnerWelcome";
 import PartnerForm from "../PartnerForm/PartnerForm";
 import Footer from "../Footer/Footer";
 import partnerFormClasses from "../PartnerForm/partnerForm.module.css";
+import {useTranslation} from "react-i18next";
 
 const Partnership = () => {
+    const {t, i18n} = useTranslation()
+
+    function handleClick(lang) {
+        i18n.changeLanguage(lang)
+    }
+
     const cursor = useRef()
 
     const styles = {
@@ -16,9 +23,9 @@ const Partnership = () => {
     }
     return (
         <div>
-            <Header/>
-            <PartnerWelcome/>
-            <PartnerForm/>
+            <Header handleClick={handleClick} t={t} i18n={i18n}/>
+            <PartnerWelcome t={t}/>
+            <PartnerForm t={t}/>
             <Footer/>
             <div ref = {cursor} style={styles}>
                 <CustomCursor

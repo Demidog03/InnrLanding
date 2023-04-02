@@ -26,20 +26,27 @@
     position: absolute;
     right: 0;
     top: 60px;
+    width: 296px;
+    height: 402px;
 }
 
 .contactForm{
     display: flex;
-    border-radius: 20px;
-    padding: 22px 25px;
-    border: 22px solid rgba(217, 217, 217, 0.12);
-    margin-bottom: 52px;
-    position: relative;
+    flex-direction: column;
+}
+
+.formContent{
+    display: flex;
     gap: 20px;
+    max-width: 1003px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.67);
+    padding: 13px 16px;
+    border: 14px solid rgba(217, 217, 217, 0.12);
 }
 
 .countriesSelect{
-    width: 36%;
+    width: 25%;
     padding: 0px 10px;
     font-size: 1.2rem;
     border-radius: 10px;
@@ -51,7 +58,7 @@
 .emailInput{
     padding: 22px 26px;
     font-size: 1.2rem;
-    width: 100%;
+    width: 60%;
     border-radius: 10px;
     background: rgba(217, 217, 217, 0.35);
     border: none;
@@ -69,6 +76,7 @@
     align-self: center;
     gap: 10px;
     position: relative;
+    margin-top: 33px;
 }
 
 .submitBtn img{
@@ -76,11 +84,13 @@
 }
 .launchWord{
     position: relative;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 .launchBorder{
     position: absolute;
-    left: -10px;
+    left: -30px;
     top: -10px;
     width: 220px;
 }
@@ -109,4 +119,43 @@
     height: 21px;
     bottom: -15px;
     left: -30px;
+}
+
+@media screen and (max-width: 1250px){
+    .contact{
+        padding: 0 30px;
+    }
+}@media screen and (max-width: 1250px){
+    .contact{
+        margin: 200px auto;
+        margin-bottom: 480px;
+    }
+    .oval{
+        top: 350px;
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (max-width: 798px){
+    .formContent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .countriesSelect{
+        padding: 25px 5px;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .emailInput{
+        width: 100%;
+        padding: 25px 20px;
+        font-size: 1.5rem;
+    }
+    .contactTitle{
+        font-size: 2.5rem;
+    }
+    .launchBorder{
+        width: 130%;
+        left: -12px;
+        top: -7px;
+    }
 }

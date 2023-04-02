@@ -18,13 +18,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .factsItem{
     display: flex;
     align-items: center;
     gap: 63px;
-    margin-bottom: 45px;
+    margin: 45px;
+}
+
+.factsItem:first-of-type{
+    margin-top: 0;
+}
+.factsItem:last-of-type{
+    margin-bottom: 0;
+
 }
 
 .factsDesc{
@@ -40,5 +49,54 @@
     width: 32%;
     min-width: 389px;
 }
+
+@media screen and (max-width: 1214px){
+    .description{
+        padding: 0 50px;
+
+    }
+}
+@media screen and (max-width: 1125px){
+    .description{
+        margin-top: 50px;
+    }
+    .facts{
+       flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .factsDesc{
+        width: 100%;
+    }
+    .factsItem{
+        margin: 50px 0;
+    }
+}
+@media screen and (max-width: 560px){
+    .description{
+        padding: 0 25px;
+    }
+    .title{
+        font-size: 2rem;
+        position: relative;
+    }
+    .title img{
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+}@media screen and (max-width: 485px){
+    .factsItem{
+        flex-direction: column;
+    }
+    .factsDesc{
+        text-align: center;
+        padding: 39px 10px;
+    }
+    .phoneImg{
+        min-width: 310px;
+    }
+}
+
 
 

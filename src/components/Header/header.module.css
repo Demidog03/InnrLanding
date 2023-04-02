@@ -4,12 +4,12 @@
     align-items: center;
     justify-content: center;
     padding: 29px 0;
-    z-index: -1;
+    position: relative;
 }
 
 .container{
     max-width: 1283px;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +37,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.2s ease-out;
+}
+
+.headerLanguagesBtn:hover{
+    background-color: #C1F25B;
 }
 
 .headerLanguagesBtn:first-of-type{
@@ -57,8 +62,27 @@
 .menu a{
     text-decoration: none;
     color: black;
+    font-weight: 300;
+}
+
+.menu a:hover{
+    font-weight: 500;
 }
 
 .menu a:first-of-type{
     margin-right: 23px;
+}
+
+@media screen and (max-width: 1440px) {
+    .header{
+        padding: 29px 30px;
+    }
+}@media screen and (max-width: 588px) {
+    .menu{
+        position: absolute;
+        margin-top: 120px;
+        left: 25%;
+        font-size: 1.3rem;
+        z-index: 1000;
+    }
 }

@@ -23,11 +23,13 @@
 .formButton{
     font-size: 2rem;
     font-weight: bold;
-    padding: 30px 50px;
+    padding: 30px 10px;
     max-width: 558px;
     width: 48%;
     background: #C8FA60;
     border-radius: 10px;
+    color: black;
+    text-decoration: none;
 }
 
 .formTitle{
@@ -97,15 +99,69 @@
 }
 
 .email{
-    width: 333px;
     font-size: 1.5rem;
     position: relative;
+    text-decoration: none;
+    color: black;
+}
+.email:hover{
+    text-decoration: underline;
 }
 
 .email img{
     width: 16px;
     height: 28px;
     position: absolute;
-    right: 0;
+    margin-left: 10px;
     bottom: 5px;
 }
+
+@media screen and (max-width: 1160px){
+    .partnerForm{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .partnerFacts{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 809px){
+    .question{
+        padding: 50px 20px;
+    }
+    .questionTitle{
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 677px) {
+    .formButtons{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .formButton{
+        width: 100%;
+    }
+}
+
+@media screen  and (max-width: 583px){
+    .partnerFact:nth-of-type(even) h3{
+        order: 1;
+    }
+    .partnerFact{
+        flex-direction: column;
+        text-align: center;
+        gap: 2px;
+        margin-bottom: 50px;
+    }
+    .partnerFactsTitle{
+        margin-bottom: 50px;
+    }
+
+}
+

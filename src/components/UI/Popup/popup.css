@@ -1,0 +1,73 @@
+.modal {
+    font-size: 12px;
+    background-color: #C1F25B;
+    box-shadow: black 0px 0px 500px;
+    border-radius: 10px;
+    width: 600px;
+    text-align: center;
+    padding: 10px 15px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.modal > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+.modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+}
+.modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+}
+.modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+    background-color: black;
+    color: white;
+}
+
+.modal .button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 700px){
+   .modal{
+       left: 50%;
+       width: 400px;
+       box-shadow: black 0px 0px 100px;
+   }
+    .modal > .content {
+        font-size: 1.5rem;
+    }
+    .modal .button{
+        padding: 10px 15px;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+    .modal{
+        width: 300px;
+    }
+}

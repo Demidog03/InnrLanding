@@ -3,7 +3,7 @@ const url = 'https://restcountries.com/v3.1/all'
 
 const Countries = () => {
     const [countries, setCountries] = useState([])
-    const fetchCountriesData = async () => {
+    async function fetchCountriesData () {
         const response = await fetch(url)
         const countries = await response.json()
         setCountries(countries)

@@ -1,7 +1,6 @@
 .welcome{
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 100px);
     position: relative;
     justify-content: start;
 }
@@ -20,15 +19,13 @@
 
 .welcomeContent{
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1300px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: left;
-    padding-right: 31px ;
     position: relative;
     align-items: center;
-    height: 100%;
 }
 
 .welcomeText{
@@ -110,7 +107,7 @@
 
 .clickMeText{
     position: absolute;
-    left: -130px;
+    left: -150px;
     text-align: center;
     transform: rotate(-2.22deg);
 }
@@ -124,7 +121,12 @@
     margin-bottom: 25px;
 }
 
+.welcomeTitle p{
+    display: inline-block;
+}
+
 .welcomeSubtitle{
+    font-family: 'Lexend', sans-serif;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -136,14 +138,17 @@
 }
 .instantWord{
     position: relative;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 .instantWord img{
     position: absolute;
     top: -20%;
-    left: 0;
+    left: -10%;
     z-index: -1;
     transform: scale(1.05);
+    overflow: hidden;
 }
 
 .typingWords{
@@ -154,5 +159,88 @@
 }
 
 
+.popup{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup div{
+    background-color: white;
+    padding: 50px 100px;
+}
+
+.welcomeGreenBg{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1243px) {
+    .welcomeTitle {
+        margin-top: 70px;
+    }
+    .welcomeGreenBg{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 979px) {
+  .welcomeContent{
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      gap: 50px;
+  }
+    .welcomeText{
+        width: 90%;
+        align-items: center;
+    }
+
+  .contactForm{
+      margin: 0 auto;
+      margin-bottom: 33px;
+      max-width: 100%;
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .countriesSelect{
+      padding: 15px 10px;
+      width: 100%;
+      text-align: left;
+
+  }
+    .emailInput{
+        padding: 25px 20px;
+        width: 100%;
+    }
+
+  form{
+      width: 100%;
+  }
+
+  .mainImg{
+      max-width: 100%;
+      width: auto;
+  }
+
+  .welcomeTitle{
+      font-size: 3.8rem;
+  }
+  .instantWord img{
+      width: 110%;
+      top: -5px;
+      left: -10px;
+  }
+  .submitBtn{
+      padding: 15px 25px;
+  }
+}
 
 

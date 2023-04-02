@@ -4,15 +4,20 @@ import bgOrange from '../../assets/partner-bg-orange.png'
 import bgGreen from '../../assets/partner-bg-green.png'
 import smile from '../../assets/smile.svg'
 import wow from '../../assets/wow.png'
-
-const PartnerWelcome = () => {
+import danialPartnership from '../../assets/danial-partnership.png'
+import girlPartnership from '../../assets/girl-partnership.png'
+const PartnerWelcome = ({t}) => {
     return (
         <div className={classes.partnerWelcome}>
             <div className={classes.partnerContainer}>
-                <div className={classes.oval}><img src={wow} alt=""/></div>
-                <h1 className={classes.partnerTitle}>Would you like to <br/>
-                    become a partner? <img src={smile} alt=""/></h1>
-                <div className={classes.oval}></div>
+                <div className={classes.oval}>
+                    <img className={classes.danialPartnership} src={danialPartnership} /><img className={classes.wow} src={wow} alt=""/>
+                </div>
+                <h1 className={classes.partnerTitle}>{t('Partner.1')} <br/>
+                    {t('Partner.2')} <img src={smile} alt=""/></h1>
+                <div className={classes.oval}>
+                    <img className={classes.girlPartnership} src={girlPartnership} alt=""/>
+                </div>
                 <img className={classes.bgOrange} src={bgOrange} alt=""/>
                 <img className={classes.bgGreen} src={bgGreen} alt=""/>
             </div>

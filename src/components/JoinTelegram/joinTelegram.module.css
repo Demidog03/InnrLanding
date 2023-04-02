@@ -2,7 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 100px 0;
+    padding: 150px 0;
+    position: relative;
 }
 
 .joinTelegramContainer{
@@ -13,10 +14,10 @@
 }
 
 .joinTelegramContent{
-    width: 45%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .questionMark{
@@ -37,9 +38,8 @@
     position: relative;
 }
 .joinTelegramImage2{
-    position: absolute;
-    left: 150px;
-    bottom: 0;
+    width: 100%;
+    object-fit: cover;
 }
 
 .joinTelegramText img{
@@ -68,4 +68,30 @@
 .questionMark:hover{
     width: 205px;
     height: 205px;
+}
+
+.telegramYellowBg{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0px;
+    overflow: hidden;
+    height: 1100px;
+    width: 1000px;
+}
+
+@media screen and (max-width: 882px){
+    .joinTelegramContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .joinTelegramContent{
+        width: 100%;
+    }
+    .joinTelegramImages{
+        width: 90%;
+    }
+    .joinTelegramText h2{
+        font-size: 2.5rem;
+    }
 }

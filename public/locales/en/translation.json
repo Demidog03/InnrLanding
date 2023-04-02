@@ -1,0 +1,64 @@
+{
+  "HeaderLinks": {
+    "1": "Home",
+    "2": "Partnership"
+  },
+  "WelcomeTitle": {
+    "1": "Scan for",
+    "2": "instant",
+    "3": "facial skin diagnosis"
+  },
+  "WelcomeSubtitle": {
+    "1": "Solutions for every skin concern offered"
+  },
+  "Country": {
+    "1": "Country"
+  },
+  "ClickMeText1":{
+    "1": "Click to be ",
+    "2": "the first",
+    "3": ""
+  },
+  "SubmitText":{
+    "1": "I am with you!"
+  },
+  "AllInOne": {
+    "1": "All in 1 App"
+  },
+  "Facts": {
+    "1": "Diagnostics of your problems in 30 sec",
+    "2": "Appropriate skincare products for your skin",
+    "3": "Expert consultations from specialists",
+    "4": "Reducing the cost and time spent on unnecessary treatments"
+  },
+  "LetMeKnow": {
+    "1": "Let me know about",
+    "2": "launch"
+  },
+  "JoinTelegram": {
+    "1": "Join Telegram",
+    "2": "Get updated news"
+  },
+  "Partner": {
+    "1": "Would you like to ",
+    "2": "become a partner?"
+  },
+  "PartnerForm": {
+    "1": "Fill out the form",
+    "2": "For Kazakhstani Specialists",
+    "3": "For Worldwide Specialists"
+  },
+  "WhyInnr": {
+    "1": "Why to become a medical",
+    "2": "partner on Innr?"
+  },
+  "WhyInnrFacts": {
+    "1": "Regular flow of customers",
+    "2": "Opportunity for growth and expansion",
+    "3": "Streamlined booking and payment processes"
+  },
+  "PartnerContact": {
+    "1": "Do you have questions?",
+    "2": "Contact Us: innrapp@gmail.com"
+  }
+}

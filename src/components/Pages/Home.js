@@ -9,8 +9,15 @@ import CustomCursor from "custom-cursor-react";
 import joinTelegramClasses from "../JoinTelegram/joinTelegram.module.css";
 import welcomeClasses from '../Welcome/welcome.module.css'
 import contactClasses from '../Contact/contact.module.css'
+import {useTranslation} from "react-i18next";
 
 const Home = () => {
+    const {t, i18n} = useTranslation()
+
+    function handleClick(lang) {
+        i18n.changeLanguage(lang)
+    }
+
     const cursor = useRef()
 
     const styles = {
@@ -25,12 +32,12 @@ const Home = () => {
 
     return (
         <div className="App">
-            <Header/>
-            <Welcome cursor={cursor}/>
-            <Description/>
-            <Contact/>
-            <JoinTelegram cursor={cursor}/>
-            <Footer/>
+            <Header t={t} i18n={i18n} handleClick={handleClick}/>
+            <Welcome t={t} i18n={i18n} cursor={cursor}/>
+            <Description t={t} />
+            <Contact t={t} i18n={i18n} />
+            <JoinTelegram t={t}  cursor={cursor}/>
+            <Footer t={t} />
             <div ref = {cursor} style={styles}>
                 <CustomCursor
                     style={styles}
