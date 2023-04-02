@@ -53,7 +53,7 @@ const Contact = ({t, i18n}) => {
 
             const user = { email: email.current.value, country: countryValue};
 
-            axios.post('http://localhost:5000/users', user)
+            axios.post('https://innr-backend.onrender.com/users', user)
                 .then(response => {
                     console.log(response.data);
                 })
