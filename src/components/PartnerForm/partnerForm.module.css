@@ -26,10 +26,14 @@
     padding: 30px 10px;
     max-width: 558px;
     width: 48%;
-    background: #C8FA60;
+    background-color: #C8FA60;
     border-radius: 10px;
     color: black;
     text-decoration: none;
+}
+
+.formButton:hover{
+    background-color: #dcf6a4;
 }
 
 .formTitle{

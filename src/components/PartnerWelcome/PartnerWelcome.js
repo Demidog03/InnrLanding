@@ -10,12 +10,12 @@ const PartnerWelcome = ({t}) => {
     return (
         <div className={classes.partnerWelcome}>
             <div className={classes.partnerContainer}>
-                <div className={classes.oval}>
+                <div data-aos="fade-down" className={classes.oval}>
                     <img className={classes.danialPartnership} src={danialPartnership} /><img className={classes.wow} src={wow} alt=""/>
                 </div>
-                <h1 className={classes.partnerTitle}>{t('Partner.1')} <br/>
+                <h1 data-aos="zoom-in" data-aos-duration='1000' className={classes.partnerTitle}>{t('Partner.1')} <br/>
                     {t('Partner.2')} <img src={smile} alt=""/></h1>
-                <div className={classes.oval}>
+                <div data-aos="fade-up" data-aos-delay='300' className={classes.oval}>
                     <img className={classes.girlPartnership} src={girlPartnership} alt=""/>
                 </div>
                 <img className={classes.bgOrange} src={bgOrange} alt=""/>

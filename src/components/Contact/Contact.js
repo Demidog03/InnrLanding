@@ -47,7 +47,7 @@ const Contact = ({t, i18n}) => {
         }
         else{
             setMessage(messages[3])
-            console.log(country.current.getValue())
+
             const countryValue = country.current.getValue()[0].value
             setUserInfo({email: email.current.value, country: countryValue})
 
@@ -103,7 +103,7 @@ const Contact = ({t, i18n}) => {
                         </div>
                     </form>
                 </div>
-                <img data-aos="zoom-out" className={classes.oval} src={oval1} alt=""/>
+                <img data-aos="fade-down-left" data-aos-delay='300' data-aos-duration='500' className={classes.oval} src={oval1} alt=""/>
             </div>
 
 

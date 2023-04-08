@@ -16,10 +16,15 @@ footer{
 .footerIcons a{
     height: 100%;
     width: 30px;
+    transition: width 0.2s ease-out;
 }
 .footerIcons a img{
     width: 100%;
     height: 100%;
+}
+.footerIcons a:hover{
+    /*height: 110%;*/
+    width: 35px;
 }
 
 @media screen and (max-width: 692px){

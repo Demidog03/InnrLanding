@@ -25,7 +25,7 @@ const Home = () => {
         position: 'relative',
         zIndex: '5000',
     }
-    console.log(welcomeClasses.submitBtn)
+
     const targets = ['a', 'img', 'button', 'input', 'select', '.button',
 
     ]

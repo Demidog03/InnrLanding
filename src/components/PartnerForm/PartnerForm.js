@@ -11,36 +11,36 @@ const PartnerForm = ({t}) => {
         <div>
             <div className={classes.partnerForm}>
                 <div className={classes.formContainer}>
-                    <h2 className={classes.formTitle}>{t('PartnerForm.1')}</h2>
+                    <h2 data-aos="fade-down" className={classes.formTitle}>{t('PartnerForm.1')}</h2>
                     <div className={classes.formButtons}>
-                        <a href="https://forms.gle/MfTHUszJGPT7TCnb8" className={classes.formButton}><div>{t('PartnerForm.2')}</div></a>
-                        <a href="https://forms.gle/GDv7dScYvv4HruDn9" className={classes.formButton}><div>{t('PartnerForm.3')}</div></a>
+                        <a data-aos="fade-right" data-aos-delay='200' href="https://forms.gle/MfTHUszJGPT7TCnb8" className={classes.formButton}><div>{t('PartnerForm.2')}</div></a>
+                        <a data-aos="fade-left" data-aos-delay='400'  href="https://forms.gle/GDv7dScYvv4HruDn9" className={classes.formButton}><div>{t('PartnerForm.3')}</div></a>
                     </div>
                 </div>
             </div>
             <div className={classes.partnerFacts}>
                 <div className={classes.partnerFactsContainer}>
-                    <h2 className={classes.partnerFactsTitle}>{t('WhyInnr.1')} <br/> {t('WhyInnr.2')}</h2>
+                    <h2 data-aos="fade-down" className={classes.partnerFactsTitle}>{t('WhyInnr.1')} <br/> {t('WhyInnr.2')}</h2>
                     <div className={classes.partnerFact}>
-                        <img src={number1} alt=""/>
-                        <h3>{t('WhyInnrFacts.1')}</h3>
+                        <img data-aos="fade-right" src={number1} alt=""/>
+                        <h3 data-aos="fade-left" data-aos-delay='300' >{t('WhyInnrFacts.1')}</h3>
                     </div>
                     <div className={classes.partnerFact}>
-                        <h3>{t('WhyInnrFacts.2')}</h3>
-                        <img src={number2} alt=""/>
+                        <h3 data-aos="fade-right" data-aos-delay='500'>{t('WhyInnrFacts.2')}</h3>
+                        <img data-aos="fade-left" data-aos-delay='300'  src={number2} alt=""/>
                     </div>
                     <div className={classes.partnerFact}>
-                        <img src={number3} alt=""/>
-                        <h3>{t('WhyInnrFacts.3')}</h3>
+                        <img data-aos="fade-right" data-aos-delay='300' src={number3} alt=""/>
+                        <h3 data-aos="fade-left" data-aos-delay='500'>{t('WhyInnrFacts.3')}</h3>
                     </div>
                 </div>
             </div>
 
             <div className={classes.question}>
                 <div className={classes.questionContainer}>
-                    <h2 className={classes.questionTitle}>{t('PartnerContact.1')} <img src={dividerLine} alt=""/></h2>
+                    <h2 data-aos="fade-right" data-aos-delay='500' className={classes.questionTitle}>{t('PartnerContact.1')} <img src={dividerLine} alt=""/></h2>
 
-                    <a href="mailto:innrapp@gmail.com" className={classes.email}><span>{t('PartnerContact.2')}</span> <img src={arrowLeft} alt=""/></a>
+                    <a data-aos="zoom-out" href="mailto:innrapp@gmail.com" className={classes.email}><span>{t('PartnerContact.2')}</span> <img src={arrowLeft} alt=""/></a>
                 </div>
             </div>
         </div>

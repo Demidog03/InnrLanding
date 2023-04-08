@@ -56,7 +56,7 @@ const Welcome = ({cursor, t, i18n}) => {
         }
         else{
             setMessage(messages[3])
-            console.log(country.current.getValue())
+
             const countryValue = country.current.getValue()[0].value
             setUserInfo({email: email.current.value, country: countryValue})
 

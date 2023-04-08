@@ -5,9 +5,15 @@ const Countries = () => {
     const [countries, setCountries] = useState([])
     async function fetchCountriesData () {
         const response = await fetch(url)
-        const countries = await response.json()
-        setCountries(countries)
-        console.log(countries)
+        if(response.status != 200){
+            alert("Bad response: " + response.statusText)
+        }
+        else{
+            const countries = await response.json()
+            setCountries(countries)
+
+        }
+
     }
 
     useEffect(() => {

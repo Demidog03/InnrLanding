@@ -4,7 +4,7 @@ import './popup.css'
 
 
 export default ({userInfo, message}) => {
-    console.log(userInfo)
+
     const handleClick = () => {
         if(message == 'Thank you for support! Check your email! P.S. Check spam if there is no message from us.'
             || message == 'Спасибо за поддержку! Проверьте свою почту! P.S. Если от нас сообщение не пришло, проверьте спам!'
