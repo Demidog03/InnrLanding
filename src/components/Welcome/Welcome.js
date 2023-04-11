@@ -22,7 +22,7 @@ const Welcome = ({cursor, t, i18n}) => {
     const [userInfo, setUserInfo] = useState({})
     const [message, setMessage] = useState('')
 
-    const countries = Countries()
+    const countries = Countries().sort()
     const typingWordsStyle = {
         fontWeight: '600',
         fontSize: '1.5rem',

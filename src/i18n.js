@@ -29,8 +29,8 @@ i18n
             }
           }
         },*/
-        lng: 'ru',
-        fallbackLng: "ru",
+        lng: 'en',
+        fallbackLng: "en",
         debug: true,
         whitelist: languages,
 
